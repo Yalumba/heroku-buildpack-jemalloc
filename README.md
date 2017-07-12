@@ -10,7 +10,7 @@ I am a Heroku buildpack that installs
 [Heroku now supports using multiple buildpacks for an app](https://devcenter.heroku.com/articles/using-multiple-buildpacks-for-an-app).
 
 ```bash
-heroku buildpacks:add --index 1 https://github.com/mojodna/heroku-buildpack-jemalloc.git
+heroku buildpacks:add --index 1 https://github.com/yalumba/heroku-buildpack-jemalloc.git
 git push heroku master
 ```
 

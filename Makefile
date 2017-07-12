@@ -16,6 +16,6 @@ src/jemalloc.tar.bz2:
 .PHONY: jemalloc-cedar
 
 jemalloc-cedar: src/jemalloc.tar.bz2
-	docker build --rm -t mojodna/$@ .
+	docker build --rm -t yalumba/$@ .
 	-docker rm $@
-	docker run --name $@ mojodna/$@ /bin/echo $@
+	docker run --name $@ yalumba/$@ /bin/echo $@

@@ -3,6 +3,8 @@
 I am a Heroku buildpack that installs
 [jemalloc](http://www.canonware.com/jemalloc/) into a dyno slug.
 
+## This fork is required until https://github.com/mojodna/heroku-buildpack-jemalloc/pull/10 is merged, at which point we can switch back to using the master buildpack.
+
 ## Using
 
 [Heroku now supports using multiple buildpacks for an app](https://devcenter.heroku.com/articles/using-multiple-buildpacks-for-an-app).
@@ -15,7 +17,7 @@ git push heroku master
 If you're not seeing great results from Jemalloc 4.x, you can try Jemalloc 3.6 instead:
 
 ```bash
-heroku buildpacks:add --index 1 https://github.com/mojodna/heroku-buildpack-jemalloc.git#v3.6.0
+heroku buildpacks:add --index 1 https://github.com/yalumba/heroku-buildpack-jemalloc.git#v3.6.0
 git push heroku master
 ```
 
